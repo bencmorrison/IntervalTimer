@@ -16,7 +16,7 @@ public final class IntervalTimer {
     /// If it is nil, the timer will iterate using the last iteration until stopped.
     public var maxIterations: Int? { worker.maxIterations }
     /// A flag representing if the timer is currently running or not.
-    @Published var stopped: Bool = true
+    @Published public var stopped: Bool = true
     private var cancellables: [Cancellable] = []
     
     /// Creates an `IntervalTimer` that uses the specified parameters.
